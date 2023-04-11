@@ -7,7 +7,12 @@ namespace Blog.Screens.TagScreens
     {
         public static void Load()
         {
+            Console.Clear();
+            Console.WriteLine("Lista de tags");
+            Console.WriteLine("-------------");
             List();
+            Console.ReadKey();
+            MenuTagScreen.Load();
         }
 
         private static void List(){
